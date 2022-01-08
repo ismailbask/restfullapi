@@ -1,0 +1,47 @@
+@BASE_URL=http://localhost:5000/api
+
+
+GET {{BASE_URL}}/users
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFhMTgxYTllNzBiN2FjNTI2ODg3NjEiLCJuYW1lIjoiaXNtYWlsIiwidXNlcm5hbWUiOiJpc21haWwiLCJlbWFpbCI6ImlzbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2Mzg1MzcyNzcsImV4cCI6MTYzODU0MDg3N30.RZoxx_rcgvJ2A-qBdWWpZRhXm2HoakohgwKIFmz2hVg
+###
+GET  {{BASE_URL}}/users/99
+
+###
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "name":"ismail",
+    "userName":"ismail",
+    "email":"ismail@gmail.com",
+    "password":"123456"
+}
+###
+POST {{BASE_URL}}/users/giris
+Content-Type: application/json
+
+{
+
+    "email":"ismail@gmail.com",
+    "password":"123456"
+}
+###
+PUT {{BASE_URL}}/users/61aa16bbd697d55d07b77c44
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFhMTgxYTllNzBiN2FjNTI2ODg3NjEiLCJuYW1lIjoiaXNtYWlsIiwidXNlcm5hbWUiOiJpc21haWwiLCJlbWFpbCI6ImlzbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2Mzg1MzcyNzcsImV4cCI6MTYzODU0MDg3N30.RZoxx_rcgvJ2A-qBdWWpZRhXm2HoakohgwKIFmz2hVg
+
+{
+    "name":"nalan kemal",
+    "password":"123654789"
+}
+###
+DELETE {{BASE_URL}}/users/61a776715c4675cfe2ccf49a
+
+###
+GET {{BASE_URL}}/users/deleteall
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFhMDJhMmNhOTg2YWE2MTdjYWYyNWMiLCJuYW1lIjoidmVkYXQiLCJ1c2VybmFtZSI6InZlZGF0IiwiZW1haWwiOiJ2ZWRhdEBnbWFpbC5jb20iLCJpYXQiOjE2Mzg1MzQzMzQsImV4cCI6MTYzODUzNzkzNH0.5ocWcQMI1BNGY_PPbXom7vwMehsWA6UNyd8MswRiyRE
+
+###
+DELETE {{BASE_URL}}/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFhMGZkMDRlYzhiZjUxZGIyNTM1OGIiLCJuYW1lIjoibmFsYW4iLCJ1c2VybmFtZSI6Im5hbGFuIiwiZW1haWwiOiJuYWxhbkBnbWFpbC5jb20iLCJpYXQiOjE2Mzg1MzUyMTksImV4cCI6MTYzODUzODgxOX0.rFUPxnOGrzccBt6Tn9O14xIJBs1KlkelIwlCgiAW7lE
